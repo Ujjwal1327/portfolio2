@@ -1,0 +1,97 @@
+.intro {
+    display: flex;
+    height: 100vh;
+    /* align-items: center; */
+}
+
+.left {
+    flex: 1;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+    /* background-color: blue; */
+    width: 80%;
+    height: 70%;
+}
+
+.text {
+    /* border: 2px solid red; */
+    width: 60%;
+    margin: 70px 30px;
+}
+
+.text h4 {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.text h2 {
+    font-size: 50px;
+    /* color: rgb(0, 244, 0); */
+}
+
+.wrapper {
+    overflow: hidden;
+    margin: 20px 30px;
+    width: 50%;
+    /* background-color: tomato; */
+    height: 24px;
+    border-radius: 10px;
+}
+
+.wrapperItem {
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 95%;
+    margin: auto;
+    color: red;
+    animation: move 8s ease-in-out infinite;
+}
+
+@keyframes move {
+    30% {
+        transform: translateY(-25px);
+    }
+    60% {
+        transform: translateY(-50px);
+    }
+    90% {
+        transform: translateY(-75px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.wrapperItem h4 {
+    font-weight: 300;
+}
+
+.left p {
+    /* border: 2px solid red; */
+    width: 85%;
+    margin: auto;
+    font-size: 8px;
+    text-align: left;
+}
+
+.right {
+    /* background-color: red; */
+    flex: 1;
+    position: relative
+}
+
+.bg {
+    -webkit-clip-path: polygon(100% 0%, 100% 45%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    clip-path: polygon(100% 0%, 100% 45%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    background-color: rgb(119, 231, 119);
+    height: 100%;
+}
+
+.right img {
+    position: absolute;
+    height: 95%;
+    bottom: 0px;
+    right: 20px;
+    /* transform: scale(2); */
+}
