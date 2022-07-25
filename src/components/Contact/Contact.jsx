@@ -43,7 +43,7 @@ export default function Contact() {
             <img src={email} alt="" />
             <p>ujjwal.13du@gmail.com</p>
           </div>
-          <div className={classes.box} style={{ width: "180px" }}>
+          <div className={classes.box} style={{ width: "380px" }}>
             <img src={address} alt="" />
             <p>South lane, Bhadra ghat, Patna city,Bihar</p>
           </div>
@@ -57,12 +57,12 @@ export default function Contact() {
           </p>
         </div>
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" placeholder="Name" name="user_name" />
-          <input type="text" placeholder="Subject" name="user_subject" />
-          <input type="text" placeholder="Email" name="user_email" />
+          <input type="text" placeholder="Name: " name="user_name" />
+          <input type="text" placeholder="Subject: " name="user_subject" />
+          <input type="text" placeholder="Email: " name="user_email" />
           <textarea
             name="user_message"
-            placeholder="Message"
+            placeholder="Query message"
             rows="5"
           ></textarea>
           <button>Submit</button>
